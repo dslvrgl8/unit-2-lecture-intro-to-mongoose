@@ -3,7 +3,9 @@ const router = express.Router();
 
 // Create
 router.post('/', async (req, res) => {
-	res.send('tweet post route');
+	// what is the key we are looking for that has the data
+	console.log('req.body', req.body)
+	res.send(req.body);
 });
 
 // Index
